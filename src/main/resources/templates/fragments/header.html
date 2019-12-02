@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+        <link th:fragment="bootstrap" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+        <link th:fragment="css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+        <link th:fragment="font" href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+<div class="header" th:fragment="header">
+    <div class="header-topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <span class="header-titel">Jonathan Eis Benzon's <span class="secondaryColor">Blog</span></span>
+                    </div>
+                    <div class="col-lg">
+                        <span><a class="secondaryColor glyphicon glyphicon-earphone"></a><a href="tel:+4540266249">40266249</a><a class="secondaryColor glyphicon glyphicon-envelope"></a>  <a href="mailto:jonathaneisbenzon@mail.com" target="_blank">jonathaneisbenzon@mail.com</a></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid CostumeMenu">
+        <div class="container">
+            <nav th:replace="fragments/navbar :: navbar"></nav>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+</html>

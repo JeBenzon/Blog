@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2>Opret Opslag</h2>
+    <form action="#" th:action="@{/create}" method="post">
+        <label for="inputname">Titel på blogopslag</label>
+        <input type="text" th:field="${blogopslag.titel}" id="inputname" class="form-control" placeholder="Enter titel">
+        <label for="inputYear">Content på blogopslag</label>
+        <input type="text" th:field="${blogopslag.content}" id="inputYear" class="form-control" placeholder="Enter Content">
+
+        <input class="btn btn-dark" type="submit" value="Send">
+    </form>
+</div>
+
+<script src="webjars/jquery/3.3.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="webjars/popper.js/1.14.3/umd/popper.min.js"></script>
+</body>
+</html>

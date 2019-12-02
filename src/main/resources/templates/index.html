@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Jonathans Blog</title>
+
+    <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+
+</head>
+<body>
+
+<div class="container Main">
+    <h1>Welkommen til Jonathans Blog</h1>
+</div>
+
+<form th:action="@{/}" method="post">
+    <input type="text" th:field="${user.username}" placeholder="username">
+    <input type="password" th:field="${user.password}" placeholder="password">
+    <input class="btn btn-light" type="submit" value="Send">
+</form>
+
+</body>
+</html>
